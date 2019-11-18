@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>神秘人</title>
+  <style>
+    .fs01 {
+      /* font-size是字体大小 */
+      font-size: 20px;
+    }
+
+    .fs02 {
+      font-size: 80px;
+    }
+
+    .fs03 {
+      /* em是容器字体大小的倍数，是相对单位 */
+      font-size: 1.5em;
+    }
+
+    .fs04 {
+      font-size: 2em;
+    }
+
+    /* css3带来新单位，基准字体倍数 */
+
+    .fs05 {
+      font-size: 1.5rem;
+    }
+
+    .fs06 {
+      font-size: 2rem;
+    }
+
+    /* 
+      a标记自带效果，点击后的颜色不受容器影响，还带有下划线
+      需要单独设置样式来控制
+      标记选择器：标记选择名称{样式}
+      表示所有对应名称的标记都会套用对应样式！！！！
+      例如div{color:red;}表示所有的div都是红色字！！！！
+    */
+    a {
+      color: #ff0000;
+      /* text-decoration是文本修饰下划线，none表示没有 */
+      text-decoration: none;
+    }
+
+    /* 
+     :是伪类，放在选择器后面（紧贴着）
+     :hover表示鼠标停在元素上的效果
+    */
+    a:hover {
+      /* underline表示下划线 */
+      text-decoration: underline;
+      color: #0000ff;
+      font-size: 1.2rem;
+      /* transition: all 10s; */
+    }
+
+
+    /* 
+     本周作业题
+     单独创建自己姓名拼音的文件夹，例如liujingting
+     里面包含index.html文件，内容是自己的简介
+     必须包含以下知识点
+      颜色，字体大小，超链接，图片或者背景图片
+      如果有图片，也要放置文件夹中
+      最后由组长统一交给学习委员
+    */
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav style="text-align: right;">
+    <a href="index.html">返回首页</a>
+
+  </nav>
+
+  <section>
+    <h1>字体大小</h1>
+    <span>标准大小</span>
+    <span class="fs01">像素值1</span>
+    <span class="fs02">像素值2</span>
+    <hr>
+    <div>
+      <div>标准大小</div>
+      <div class="fs03">容器倍数1</div>
+      <div class="fs04">容器倍数2</div>
+      <div class="fs03">
+        em是容器相对倍数
+        <span class="fs04">这里会加大</span>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <div>标准大小</div>
+      <div class="fs05">浏览器基准字体倍数1</div>
+      <div class="fs06">浏览器基准字体倍数2</div>
+      <div>
+        基准倍数不受容器影响
+        <span class="fs06">rem是绝对单位值</span>
+      </div>
+    </div>
+    <!-- 
+    作业1：内容是单行，没有间距，显示1234567
+    要求，每一个数字都比上一个数字大，每个数字颜色要不一样
+   -->
+
+    <div>
+
+      <a href="#">超链接1</a>
+      | <a href="#">超链接2</a>
+      | <a href="#">超链接3</a>
+    </div>
+
+  </section>
+</body>
+
+</html>
