@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>边框，内外边距，圆角</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* 边框 */
+    .border01 {
+      /* 
+      第一个参数是边框的宽度
+      第二个参数是边框的线条类型 solid是单线条
+      第三个参数是颜色
+       */
+      border: 1px solid #ff0000;
+    }
+
+    .border02 {
+      /* 
+      边框的复杂分部写法  width：宽，color:颜色，style:线型
+      */
+      border-width: 2px;
+      border-color: aquamarine;
+      border-style: dashed;
+    }
+
+    .border03 {
+      /* 上边框 top right bottom left */
+      border-top: 1px dotted #00ff00;
+      /* 下边框 */
+      border-bottom: 1px solid #0000ff;
+    }
+
+    .border04 {
+      /* 边框和内间距 */
+      border: 1px solid #ff0000;
+      padding: 0.5rem;
+    }
+
+    .yuanjiao01 {
+      border: 1px solid #ff0000;
+      /* 圆角 */
+      border-radius: 1rem;
+    }
+
+    /* 定制圆角 */
+    .yuanjiao02 {
+      border: 1px solid #ff0000;
+      /* top right bottom left */
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 1rem;
+    }
+
+    .yuan {
+      /* 圆 必须是正方形才能正圆 */
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ff0000;
+      border-radius: 50%;
+      /* 固定内容在中心位置 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 外边距，表示和元素外部的元素分开 */
+    .margin01 {
+      /* top right bottom left */
+      margin: 1rem 2rem 3rem 4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 边框 -->
+  <section class="border01">
+    基本的边框
+  </section>
+  <hr>
+  <!-- 非块级元素的边框 -->
+  <span class="border02">非块级元素</span>
+  <hr>
+  <!-- 定制版的边框 -->
+  <section class="border03">
+    上下边框，没有左右边框
+    <hr>
+    <!-- 边框和内边距 -->
+    <section class="border04">
+      边框和内边距效果
+    </section>
+
+  </section>
+  <hr>
+  <!-- 圆角 -->
+  <section class="yuanjiao01">
+    基本的圆角
+  </section>
+  <hr>
+  <!-- 上方圆角 -->
+  <section class="yuanjiao02">
+    只有上方圆角
+  </section>
+
+  <hr>
+  <!-- 圆 -->
+  <section class="yuan">
+    圆
+  </section>
+  <hr>
+  <!-- 外边距 -->
+  <section class="border01 margin01"  >
+    <!-- 
+      一个元素的class属性可以是多个值
+      中间用空格分开，那么多个值的效果会叠加
+     -->
+    <div class="border01 margin01">第一个子元素</div>
+    <div class="border01 margin01">第二个</div>
+  </section>
+</body>
+
+</html>
