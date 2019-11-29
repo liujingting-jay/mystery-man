@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素，简单理解就是可以输入的元素</title>
+</head>
+
+<body>
+  <!-- 
+  文本框 input就是表单元素里面的输入框 
+  text是默认值 placeholder是输入的提示信息，一输入就不显示了
+-->
+  姓名：<input type="text" placeholder="请输入姓名">
+  <br>
+  密码：<input type="password" placeholder="登录密码">
+  <!-- 数值输入框和日期输入框 -->
+  数值：<input type="number">
+  日期：<input type="date">
+  <hr>
+  <!-- 标签 label -->
+  <label>
+    带标签的表单元素
+    <input type="text">
+    点击标签文本
+  </label>
+  <!--
+   单选按钮 radio name属性值相同为一组
+   checked属性出现表示为默认选中状态 
+-->
+  <label>
+    <input type="radio" name="sex">男神
+  </label>
+  <label>
+    <input type="radio" name="sex">女神
+  </label>
+  <label>
+    <input type="radio" name="sex" checked>保密
+  </label>
+
+  <!-- 复选框 -->
+  <label>
+    <input type="checkbox">游戏
+  </label>
+  <label>
+    <input type="checkbox">音乐
+  </label>
+  <label>
+    <input type="checkbox" checked>电影
+  </label>
+  <label>
+    <input type="checkbox">学习
+  </label>
+  <!--
+   列表 select 复合标记
+   option是选项
+   selected 表示默认选择
+  -->
+  <select>
+    <option>请选择最高学历</option>
+    <option>小学</option>
+    <option>初中</option>
+    <option selected>高中</option>
+    <option>大学</option>
+  </select>
+
+  <select size="3" multiple>
+    <option>杨淳</option>
+    <option>曾露玲</option>
+    <option>刘婧婷</option>
+    <option>赵静</option>
+    <option>张芳萱</option>
+    <option>戴金凤</option>
+    <option>吴悦梅</option>
+  </select>
+
+</body>
+
+</html>

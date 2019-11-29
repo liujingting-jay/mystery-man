@@ -1,0 +1,55 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* 底部样式 */
+.dibu {
+  text-align: center;
+  background-color: #eff4fa;
+}
+
+.dibu-wz {
+  color: #b6b6b6;
+}
+
+a {
+  color: #1d5494;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 底部定位和内边距 */
+footer {
+  padding: 1rem;
+  /* 
+    固定位置 position: fixed;
+    效果就是固定在指定的位置，不会因为页面滚动变换
+    块级元素是丢失宽度，变成内容的宽度
+    定位是top,right,bottom,left
+  */
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #d6dfea;
+}
+
+/* 头部样式 */
+header {
+  /* 左右布局 */
+  display: flex;
+  justify-content: space-between;
+/* 压力布局子元素垂直居中(交叉轴）*/
+align-items: center;
+  /* 颜色和内边距 */
+  background-color: #eff4fa;
+  color: #b6b6b6;
+  padding: 1rem 3rem;
+  /* 下边线 */
+  border-bottom: 1px solid #d6dfea;
+}
+
+
