@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一个简单的综合页面</title>
+  <style>
+    /* 去掉body的默认边距 */
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .div {
+      /* class=div */
+    }
+
+    div {
+      /* 所有的div样式 */
+    }
+
+    /* 头部的返回菜单样式 */
+    .tou {
+      background-color: #FBC02D;
+      text-align: right;
+      /* 
+       内边距 里面的元素分开一定的距离 padding
+       四个值分别对应到上右下左四个内边距
+       */
+      padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    .tou-a {
+      /* 头部超链接样式 */
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* 网站标题样式 */
+    .title {
+      background-color: aquamarine;
+      color: slateblue;
+      font-size: 2em;
+      text-align: center;
+      /* padding可以简写成两个参数，分别代表上下和左右 */
+      padding: 1rem 1rem;
+    }
+
+    /* 标题突出显示文本 */
+    .title-text {
+      font-size: 1.2em;
+      color: blue;
+    }
+
+    /* 简介的样式 */
+    .info {
+      background-color: lightcoral;
+      font-size: 1rem;
+      color: lightskyblue;
+      text-align: center;
+      /* padding最后一种简写，一个参数，表示上右下左全都一样 */
+      padding: 0.5rem;
+    }
+
+    /* 调整视频播放界面大小 */
+    .mv {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 头部 ，返回首页的超链接 -->
+  <header class="tou">
+    <a class="tou-a" href="index.html">返回</a>
+  </header>
+
+
+  <!-- 网站的标题 -->
+  <section class="title">
+    <span class="title-text"> 神秘人</span>的网站
+
+  </section>
+  <!-- 简介 -->
+  <section class="info">
+    大家好，我是神秘人，我不能暴露在世界上，我和蜘蛛侠是好朋友，他也不能暴露在世界上，哈哈哈哈
+  </section>
+
+  <hr>
+  <!-- 页面嵌入音频和视频 -->
+  <!-- 
+    audio 音频
+    src 是音频文件地址
+    controls 表示出现音频播放的控制界面 
+    autopaly 表示音乐自动播放（但是谷歌禁用了该功能，必须用户操作后才行）
+    loop 表示音乐循环播放
+   -->
+  <audio controls autoplay loop
+    src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=14&tbOssInfo.obid=1"></audio>
+  <!-- 
+  video 视频 21 guns
+  src是视频文件地址
+  controls 是播放控制界面
+ -->
+  <video controls class="mv" src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=7&tbOssInfo.obid=1"></video>
+</body>
+
+</html>
