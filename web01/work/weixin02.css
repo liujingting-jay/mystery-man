@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  /* 写了固定定位会丢失宽度，要写宽度 */
+  width: 100%;
+  top: 0px;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ededed;
+  padding: 0.5rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.title {
+  /* 粗体 */
+  font-weight: bold;
+}
+
+.mr {
+  /* 右间距 */
+  margin-right: 1.5rem;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer>div {
+  display: flex;
+  /* 把剩余元素均分space-around */
+  justify-content: space-around;
+  background-color: #ededed;
+  padding: 0.5px 0px;
+  border-top: 1px solid #dcdcdc;
+}
+
+.active-icon {
+  /* 激活的图标 */
+  color: #08c261;
+}
+
+/* 
+新增选择器1 选择器2：表示选择器1中的选择器2元素
+只要是里面的，不区分有多少级
+例如 header div表示只有header 里面的div套用
+和>号的区别就是：>号只影响第一级，空格是不分层级的
+*/
+footer .iconfont {
+  font-size: 2rem;
+}
+
+/* 
+fixed定位会遮挡住相邻的元素，所以需要预留空间给固定位置
+*/
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+}

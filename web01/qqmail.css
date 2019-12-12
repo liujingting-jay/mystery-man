@@ -42,8 +42,8 @@ header {
   /* 左右布局 */
   display: flex;
   justify-content: space-between;
-/* 压力布局子元素垂直居中(交叉轴）*/
-align-items: center;
+  /* 压力布局子元素垂直居中(交叉轴）*/
+  align-items: center;
   /* 颜色和内边距 */
   background-color: #eff4fa;
   color: #b6b6b6;
@@ -52,4 +52,136 @@ align-items: center;
   border-bottom: 1px solid #d6dfea;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
+.main-left {
+  margin-right: 4rem;
+}
+
+/* 右边外框 */
+.main-right {
+  border: 1px solid #a0b1c4;
+  border-radius: 4px;
+}
+
+/* 右边第一行样式 */
+.main-right01 {
+  display: flex;
+  /* 压力布局的水平对齐 space-around表示将空白区域平均分配在每个元素的两旁 */
+  justify-content: space-around;
+  background-color: #f9fbfe;
+  color: #999999;
+  padding: 0.5rem 0px;
+  /* 修正圆角 */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* 右边表单的大框 */
+.main-form {
+  padding: 2rem;
+  border-top: 1px solid #a0b1c4;
+}
+
+/* input元素特效 */
+.myinput {
+  border: 1px solid #96a5b4;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.myinput>input {
+  /* 去掉input元素的默认边框 */
+  outline: none;
+  border-width: 0px;
+  width: 220px;
+}
+
+/* 
+  :focus-within 伪类，意思是元素或者元素里面任意子元素拥有焦点的时候套用
+  :hover 伪类，意思是鼠标在元素里面的时候套用
+ */
+.myinput:focus-within {
+  border-color: #6892e7;
+}
+
+/* 登录按钮 */
+.login-button {
+  background-color: #5a98de;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 0px;
+  margin: 8px 0px;
+  border-radius: 4px;
+  /* 鼠标指针 */
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #6aa2e0;
+}
+
+/* 扫码登录 */
+.qrcode {
+  text-align: center;
+  font-size: 0.8em;
+  color: #225592;
+  cursor: pointer;
+}
+
+/* 忘了密码 */
+.wlmm {
+  margin-top: 3rem;
+  text-align: right;
+  color: #225592;
+  text-decoration: none;
+}
+
+.wlmm>a {
+  color: #225592;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.wlmm>a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ html 超文本标记语言
+ css  层叠样式表
+   html是核心，由不同的标记组成
+   css负责样式美化和布局定位
+
+   标记格式：
+   1：成对的
+   <标记名称></标记名称>
+   例如：<div></div><p></p>
+   2:单一的
+   例如：<br> <hr>
+   标记属性：
+   <标记名称 属性名称="值" 属性1="值1">
+   属性只能出现在开始标记中，多个属性用空格分开
+   例如：<div class="abc"></div> <p width="1" height="2"></p>
+
+   css分为两块，选择器和样式
+   选择器负责指定哪些标记套用
+   样式才是css核心，可以指定颜色，布局，高宽等等...
+   样式格式:
+   选择器{
+     样式名称:样式值;
+     样式名称:值1;
+   }
+   例如:
+  .abc {
+    color:#ff0000;
+    border:1px solid red;
+    width:100px;
+  }
+
+ */

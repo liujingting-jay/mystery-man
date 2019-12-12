@@ -2,24 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- 头部是左右布局 -->
-  <header>
-    <!-- 左边是logo -->
-    <section>
-      <img src="qqmail.png" alt="">
-    </section>
-    
-    <section>
-        <!-- 右边是超链接 -->
-        <a href="#">基本版</a>
-        |
-        <a href="#">English</a>
-        |
-        <a href="#">手机版</a>
-        |
-        <a href="#">企业邮箱</a>
-      </section>
-  </header>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,8 +11,70 @@
 </head>
 
 <body>
+  <!-- 头部是左右布局 -->
+  <header>
+    <!-- 左边是logo -->
+    <section>
+      <img src="qqmail.png" alt="">
+    </section>
+
+    <section>
+      <!-- 右边是超链接 -->
+      <a href="#">基本版</a>
+      |
+      <a href="#">English</a>
+      |
+      <a href="#">手机版</a>
+      |
+      <a href="#">企业邮箱</a>
+    </section>
+  </header>
+  <!-- 中间区域 -->
+  <main>
+    <div class="main-left">
+      左边的图片和文字
+    </div>
+
+    <div class="main-right">
+      <!-- 右边第一行 -->
+      <div class="main-right01">
+        <div>微信登录</div>
+        <div>QQ登录</div>
+      </div>
+      <!-- 右边的登录表单 -->
+      <div class="main-form">
+        <div class="myinput">
+          <input type="text" placeholder="支持QQ号/邮箱/手机登录">
+        </div>
+
+        <div class="myinput">
+          <input type="password" placeholder="QQ密码">
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox">下次自动登录
+          </label>
+        </div>
+
+        <div class="login-button">
+          登 录
+        </div>
+
+        <div class=" qrcode">
+          <img src="qqmail03.png" alt="">
+          扫码快捷登录
+        </div>
+        <div class="wlmm">
+          <a href="#">忘了密码？</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
   <footer class="dibu">
-    <a href="#">关于腾讯</a>
+    | <a href="#">关于腾讯</a>
     | <a href="#">服务条款</a> 
     | <a href="#">隐私政策</a> 
     | <a href="#">客服中心</a> 
