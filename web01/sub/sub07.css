@@ -1,0 +1,144 @@
+.ani01 {
+  font-size: 1rem;
+  /* 
+  transition是过渡动画，表示元素属性变化时平缓过渡 
+  第一个参数是属性名称 第二个是过渡秒数
+  第三个参数是可选参数，速动函数，非匀速变化
+  */
+  transition: font-size 2s ease-in-out;
+}
+
+.ani01:hover {
+  font-size: 1.5rem;
+}
+
+.ani02 {
+  box-shadow: 0px 0px 0px #ffff00;
+  width: 200px;
+  height: 100px;
+  background-color: #dddd00;
+  transition: all 2s;
+}
+
+.ani02:hover {
+  box-shadow: 0px 0px 1rem #ffff00;
+  background-color: #00ff00;
+  width: 210px;
+  height: 110px;
+}
+
+/* 更灵活性能更好的动画方式 */
+/* 
+第一部分：定义关键帧
+格式：
+@keyframes 关键帧名称{
+  动画进度百分比 {
+    样式...
+ }...
+}
+示例：
+@keyframes ani01 {
+  0%{
+    color: red;
+    font-size: 1rem;
+  }
+  80%{
+    color: blue;
+    font-size: 2rem;
+  }
+}
+意思是：关键帧名称为ani01，套用该动画的样式会
+在开始时为红色1rem的字体，动画时间到80%时为2rem的字体
+*/
+@keyframes myani {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  100% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* 第二部分：使用关键帧动画 */
+.ani03 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* 关键帧动画 */
+  animation: myani 2s;
+}
+
+.ani04 {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+}
+
+.ani04:hover {
+  cursor: pointer;
+  animation: myani 1s infinite;
+}
+
+/* 抖动的动画效果 */
+@keyframes shake {
+  0% {
+    /* 
+     变形，倾斜元素
+    */
+    transform: rotate(0deg);
+  }
+  
+  10% {
+    transform: rotate(5deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(-5deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ani05 {
+  width: 100px;
+  height: 100px;
+  background-color: #00ff00;
+}
+
+.ani05:hover {
+  cursor: pointer;
+  animation: shake 0.01s infinite;
+}
