@@ -1,0 +1,43 @@
+/* 公共的css样式 common.css */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 文本的对齐方式 */
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+/* 字体大小 */
+.fs10 {
+  font-size: 1rem;
+}
+
+.fs12 {
+  font-size: 1.4rem;
+}
+
+.fs14 {
+  font-size: 1.4rem;
+}
+
+.fs16 {
+  font-size: 1.6rem;
+}
+
+.fs18 {
+  font-size: 1.8rem;
+}
+
+.fs20 {
+  font-size: 2rem;
+}
+
