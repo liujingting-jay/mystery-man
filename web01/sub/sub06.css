@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.abs01 {
+  border: 1px solid #ff0000;
+  width: 100px;
+  height: 100px;
+  /* 绝对定位 针对页面的内容定位 */
+  position: absolute;
+  top:500px;
+  left: 700px;
+}
+
+.container {
+  border: 1px solid #ff0000;
+  height: 50px;
+  /* 相对定位 表示里面的元素的绝对定位是相对容器 */
+  position: relative;
+  
+}
+
+.abs02 {
+  border: 1px solid #0000ff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 绝对定位的z轴优先级 */
+.container01 {
+  border: 1px solid #ff0000;
+  height: 500px;
+  position: relative;
+}
+
+.myabs {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* 鼠标指针 */
+  cursor: pointer;
+}
+
+.myabs:hover {
+  z-index: 50;
+}
+.myabs01 {
+  background-color: #0000ff;
+  top: 10px;
+  left: 10px;
+}
+
+.myabs02 {
+  background-color: #ff00ff;
+  top: 40px;
+  left: 40px;
+  /* 绝对定位z轴，越大就越不容易被遮挡 */
+  z-index: 10;
+}
+
+.myabs03 {
+  background-color: #00ff00;
+  top: 70px;
+  left: 70px;
+}
+
+
+
+
+
+
+
+
