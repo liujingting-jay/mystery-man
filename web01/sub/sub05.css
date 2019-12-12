@@ -1,0 +1,37 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.tc {
+  text-align: center;
+}
+.myborder {
+border: 1px solid #ff0000;
+}
+/* 压力盒子居中 */
+.fc {
+  display: flex;
+  justify-content: center;
+}
+
+.vc {
+  display: flex;
+  /* 水平靠右 */
+  justify-content: flex-end;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+/* 压力布局的子元素换行 */
+.flex-wrap01 {
+  display: flex;
+  /* 子元素总宽度超过容器时换行 */
+  flex-wrap: wrap;
+  /* 还是可以使用水平对齐 */
+  justify-content: center;
+}
+
+.flex-wrap01>div {
+  width: 25%;
+}

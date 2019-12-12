@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>压力布局2</title>
+  <link rel="stylesheet" href="sub05.css">
+
+</head>
+
+<body>
+<section class="tc">
+  <div class="myborder">文本居中</div>
+</section>
+
+<section class="fc">
+  <div class="myborder">压力居中</div>
+</section>
+<!-- 文本对齐无法约束块级元素(div,section...) -->
+<section class="tc">
+    <div class="myborder">第一行</div>
+    <div class="myborder">第二行</div>
+</section>
+
+<!-- 压力布局可以控制块级元素对齐 -->
+<section class="fc">
+  <div class="myborder">第一行</div>
+  <div class="myborder">第二行</div>
+</section>
+
+<!-- 压力只对一级子元素有效 -->
+<Section class="fc">
+  <div class="myborder">
+    <div class="myborder">第一行</div>
+    <div class="myborder">第二行</div>
+  </div>
+</Section>
+<!-- 
+  压力布局的垂直居中
+-->
+<section class="fc">
+  <div class="myborder">
+    只有一行
+  </div>
+  <div class="myborder">
+    <div>第一行</div>
+    <div>第二行</div>
+    <div>第三行</div>
+  </div>
+</section>
+
+<section class="vc">
+  <div>
+    <div class="myborder">1</div>
+    <div class="myborder">2</div>
+  </div>
+  <div>
+    <div class="myborder">1</div>
+  </div>
+  <div>
+    <div class="myborder">1</div>
+    <div class="myborder">2</div>
+    <div class="myborder">3</div>
+  </div>
+</section>
+
+<!-- 压力布局的子元素总宽度超过容器，需要换行 -->
+<section class="flex-wrap01">
+    <div >可以换行的压力盒子-1</div>
+    <div>可以换行的压力盒子-2</div>
+    <div>可以换行的压力盒子-3</div>
+    <div>可以换行的压力盒子-4</div>
+    <div>可以换行的压力盒子-5</div>
+    <div>可以换行的压力盒子-6</div>
+    
+</section>
+
+</body>
+
+</html>
