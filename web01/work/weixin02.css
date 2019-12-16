@@ -62,3 +62,50 @@ main {
   margin-bottom: 4rem;
   background-color: #ffffff;
 }
+
+/* 通讯录行 */
+.line {
+  display: flex;
+}
+
+.line .iconfont {
+  font-size: 3rem;
+}
+
+/* 
+  伪类：第一个子元素first-child
+.line是class="line"
+>表示里面的第一级
+:first-child,第一个子元素
+class="line"里面的第一个div
+*/
+.line>div:first-child {
+  padding: 0.5rem;
+}
+
+/* 伪类：最后一个子元素 */
+.line>div:last-child {
+  padding: 0.5rem;
+  /* 行高(当行高大于字的高度，字会在垂直轴居中） */
+  line-height: 3rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+  /* flex填满压强 */
+  flex: 1;
+}
+
+/* 锚点样式 */
+.name {
+  padding: 0.5rem;
+  background-color: #ededed;
+  color: #9d9d9d;
+}
+
+nav {
+  position: fixed;
+  right: 0px;
+  margin: 0.5rem;
+  top: 5rem;
+  /* writing-mode: vertical-rl;垂直字 */
+  width: 1em;
+}

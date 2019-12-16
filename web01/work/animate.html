@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>第三方动画animate.css</title>
+  <!-- 
+    使用animate.css
+    官方网站：https://daneden.github.io/animate.css/
+    源码和教程：https://github.com/daneden/animate.css
+   -->
+  <link rel="stylesheet" href="animate.css">
+  <style>
+  .mydiv {
+    /* 自定义动画时长 */
+    animation-duration: 4s;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    第一个必要class: animated,表示启用动画
+    第二个必要class: 动画名称，例如shake (抖动)
+    非必要class:
+    infinite:动画无线循环
+    slow/fast:动画时长：慢/快
+   -->
+  <div class="animated shake infinite mydiv">动画效果</div>
+  <div class="animated flash fast infinite">效果2</div>
+</body>
+<!-- 周作业：完成微信最后 -->
+</html>
