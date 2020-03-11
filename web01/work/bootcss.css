@@ -1,0 +1,198 @@
+header {
+  /* 固定在上方 */
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  /* 配色 */
+  background-color: #222222;
+  color: #9d9d9d;
+  /* 下边框 */
+  border-bottom: 1px solid #080808;
+  /* 压力居中 */
+  display: flex;
+  justify-content: center;
+  /* 留白 */
+  padding: 0.5rem;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1552738 */
+  src: url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.eot');
+  src: url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1552738_nghddg2tt0r.svg#iconfont') format('svg');
+}
+header>div {
+  /* 菜单分开左右 */
+  display: flex;
+  justify-content: space-between;
+  /* 通过宽度对齐元素,让左右两个被压紧的元素分开（左右两个元素不足1200px会被拉开） */
+  width: 1200px;
+}
+
+header span {
+  /*
+  显示模式，块级元素(p,div,section...) 默认是block
+  非块级元素（i,span,b,u）默认是inline
+   inline设置padding，margin会无法正确显示
+   inline-block会保留非块级元素的特征，又能留白
+  */
+  display: inline-block;
+  /* 分开span */
+  margin-left: 1rem;
+}
+
+header span:hover { 
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.header-title {
+  font-size: 1.2rem;
+}
+/* 调整上边距错开头部菜单 */
+main {
+  margin-top: 42.5px;
+}
+
+/* 大屏幕信息 */
+.top-info {
+  text-align: center;
+  background-image: url('bootcss01.jpg');
+  background-size: cover;
+  color: #ffffff;
+  padding: 5rem 0px;
+
+}
+/* 最大的标题 */
+.top-info-title {
+  padding: 1rem 0px;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+/* 第二级标题 */
+.top-info-second-title {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+/* 标题按钮 */
+.top-info-button {
+  padding-bottom: 1rem;
+}
+.top-info-button span {
+  display: inline-block;
+  background-color: #337ab7;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.3rem 0rem #23527c;
+}
+
+.top-info-button span:hover {
+  background-color: #2e6da4;
+}
+
+.top-info a {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* 社区链接 */
+.link {
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  color: #555555;
+  border-bottom: 1px solid #dddddd;
+}
+
+.link a {
+  text-decoration: none;
+  color: #555555;
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+.link a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+}
+
+.project-info>div {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 3rem 4rem 1rem 4rem;
+}
+
+.project-info-title {
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.projects>div {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap超过宽度会强制换行 */
+  flex-wrap: wrap;
+}
+
+.project {
+  border: 1px solid #dddddd;
+  padding: 0.2rem;
+  width: 22%;
+  margin-bottom: 2rem;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.project-line01 {
+padding: 0.2rem;
+padding-top: 1.5rem;
+font-size: 1.5rem;
+}
+
+.project-line01 a {
+  color: #337ab7;
+}
+
+.project-line01 a:hover {
+  color: #204d74;
+}
+
+.project-line02 {
+  padding: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.project-line03 {
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  color: #777777;
+}
