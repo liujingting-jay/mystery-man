@@ -1,0 +1,226 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* 导航栏 */
+header {
+  /* 
+   生成绝对定位的元素，相对于浏览器窗口进行定位
+   top为固定在上面 
+  */
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* 左右分开 */
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 左边的字 */
+.z01 {
+  margin-left: 1rem;
+}
+
+/* 页面二左边的图片 */
+.img {
+  width: 360px;
+  height: 620px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+/* 页面二右边的介绍 */
+.z03 {
+  color: #fff;
+  position: absolute;
+  right: 30%;
+  top: 20%;
+  font-size: 1.6rem;
+}
+
+.z04 {
+  font-size: 1.2rem;
+}
+
+
+.z05 {
+  position: relative;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+  font-size: 1.4rem;
+  font-family: 宋体;
+  font-weight: bold;
+  color: rgba(236, 52, 52, 0.76);
+}
+
+.z06 {
+  color: #fff;
+}
+
+.z07 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.myinput01 {
+  padding: 1rem;
+  margin-right: 10px;
+  width: 300px;
+  background-color: rgba(233, 238, 226, 0.6);
+  border: none;
+  font-size: 1rem;
+}
+
+.myinput02 {
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 20px;
+  width: 650px;
+  background-color: rgba(233, 238, 226, 0.6);
+  border: none;
+}
+
+.mybox {
+  position: relative;
+  top: 30%;
+  left: 35%;
+}
+
+.myborder {
+  width: 683px;
+  height: 50px;
+  background-color: rgba(233, 238, 226, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.z01:hover {
+  cursor: pointer;
+  color: black;
+  border: 1px solid aqua;
+  background-color: aqua;
+
+}
+
+.navs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 右边字之间距离 */
+.div1 div {
+  margin-right: 3rem;
+}
+
+/* 鼠标伪类 */
+.div1 div:hover {
+  cursor: pointer;
+  color: black;
+  border: 1px solid aqua;
+  background-color: aqua;
+}
+
+/* 中间的字 */
+main {
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.quanmian {
+  /* relative相对定位，就在里面变，不能挪出去 */
+  position: relative;
+  height: 100vh;
+}
+
+#ym01 {
+  background-image: url('5.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#ym02 {
+  background-image: url('3.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+.z02 {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+
+#ym03 {
+  background-image: url('2.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 200%;
+}
+
+
+#ym04 {
+  background-image: url('4.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 200%;
+}
+
+/* 从左边移动出去的动画 */
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* 移动出去的class */
+.move-out {
+  animation: move-out 1s;
+  left: -100% !important;
+}
+
+/* 从左边移动进来的动画 */
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+/* 移动进来的class */
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}
