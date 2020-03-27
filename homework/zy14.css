@@ -1,0 +1,111 @@
+body {
+  /* 去除留白 */
+  margin: 0px;
+  padding: 0px;
+  /* 背景图片自适应 */
+  background-image: url('3.jpg');
+  background-size: cover;
+}
+
+nav {
+  /* 页数固定到下方 */
+  position: fixed;
+  bottom: 5rem;
+  width: 100%;
+  /* 页数内容居中 */
+  display: flex;
+  justify-content: center;
+}
+
+.navs span {
+  /* 导航文字的样式 */
+  display: inline-block;
+  padding: 1rem 1rem;
+  color: aliceblue;
+}
+
+.navs span:hover{
+  /* 导航的鼠标悬停 */
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.navs{
+  position: relative;
+}
+
+.bar1{
+  /* 通过宽度和背景色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 位置 */
+  position: absolute;
+  left: 0%;
+}
+
+.bar2{
+  /* 通过宽度和背景色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 位置 */
+  position: absolute;
+  left: 20%;
+}
+
+.bar3{
+  /* 通过宽度和背景色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 位置 */
+  position: absolute;
+  left: 40%;
+}
+
+.bar4{
+  /* 通过宽度和背景色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 位置 */
+  position: absolute;
+  left: 60%;
+}
+
+.bar5{
+  /* 通过宽度和背景色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 位置 */
+  position: absolute;
+  left: 80%;
+}
+
+.bac01{
+  background-image: url('3.jpg');
+  background-size: cover;
+}
+
+.bac02{
+  background-image: url('4.jpg');
+  background-size: cover;
+}
+
+.bac03{
+  background-image: url('5.jpg');
+  background-size: cover;
+}
+
+.bac04{
+  background-image: url('6.jpg');
+  background-size: cover;
+}
+
+.bac05{
+  background-image: url('7.jpg');
+  background-size: cover;
+}
+

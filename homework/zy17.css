@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+}
+
+.tc {
+  text-align: center;
+}
+
+.ys01 {
+  font-size: 5rem;
+  color: rgba(68, 68, 247, 0.911);
+}
+
+.ys02 {
+  border-radius: 0.3rem;
+  background-color: rgba(68, 68, 247, 0.911);
+  padding: 1rem;
+  width: 590px;
+  display: inline-block;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.ys03{
+  color: #ff0000;
+  font-size: 2rem;
+}
+
+section input {
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  width: 600px;
+  border: 1px solid #bcbcbc;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+section input:focus-within {
+  border-color: aquamarine;
+}
+
+.cw section input {
+  border-color: #ff0000;
+}
+
+section input:focus-within.cw {
+  border-color: #ff0000;
+}

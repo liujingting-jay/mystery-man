@@ -1,0 +1,148 @@
+body {
+  /* 去掉留白 */
+  margin: 0px;
+  /* 去掉滚动条，这样页面就变成全屏样子，没办法拖动显示超出屏幕内容，会有滑动效果 */
+  overflow: hidden;
+}
+
+/* 导航样式 */
+nav {
+  /* 
+   生成绝对定位的元素，相对于浏览器窗口进行定位
+   bottom为固定在下面 
+  */
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  /* 使字外面的盒子布局居中 */
+  display: flex;
+  justify-content: center;
+}
+
+.navs {
+  position: relative;
+}
+
+/* 样式navs 里的所有span元素设置效果 */
+.navs span {
+  /* inline-block */
+  display: inline-block;
+  /* 字之间的内边距 */
+  padding: 10px;
+  color: #ffffff;
+}
+
+/* 鼠标伪类 */
+.navs span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* 下划线样式 */
+.xhx {
+  /* 通过高宽和背景色做下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  /* 下划线的位置 绝对定位 */
+  position: absolute;
+  left: 0%;
+  /* transition是过渡动画 left属性发生变化要1s的过渡*/
+  transition: left 0.5s;
+}
+
+/* 全屏的页面样式 */
+.quanmian {
+  /* relative相对定位，就在里面变，不能挪出去 */
+  position: relative;
+  /* 高度设为全屏 vh是浏览器可视区域高度百分比 */
+  height: 100vh;
+}
+
+/* 第一个全屏页面 */
+#tp01 {
+  height: 100%;
+  background-image: url('3.jpg');
+  background-size: cover;
+  /* 绝对定位absolute 宽度会没有 */
+  position: absolute;
+  width: 100%;
+}
+
+/* 第二个全屏页面 */
+#tp02 {
+  background-image: url('4.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+/* 第三个全屏页面 */
+#tp03 {
+  height: 100%;
+  background-image: url('5.jpg');
+  background-size: cover;
+  /* 绝对定位absolute 宽度会没有 */
+  position: absolute;
+  width: 100%;
+  left: 200%;
+}
+
+/* 第四个全屏页面 */
+#tp04 {
+  background-image: url('6.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 300%;
+}
+
+/* 第五个全屏页面 */
+#tp05 {
+  height: 100%;
+  background-image: url('7.jpg');
+  background-size: cover;
+  /* 绝对定位absolute 宽度会没有 */
+  position: absolute;
+  width: 100%;
+  left: 400%;
+}
+
+/* 从左边移动出去的动画 */
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* 移动出去的class */
+.move-out {
+  animation: move-out 1s;
+  left: -100% !important;
+}
+
+/* 从左边移动进来的动画 */
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+
+
+/* 移动进来的class */
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}
