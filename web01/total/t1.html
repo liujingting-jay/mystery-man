@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>压力布局</title>
+  <link rel="stylesheet" href="t1.css">
+</head>
+
+<body>
+  <section class="flex-box">
+    <div class="bj01">压力盒子</div>
+    <div class="bj02">子元素会压到一行上</div>
+    <div class="bj03">块元素宽度会压缩，丢失必须占满一行的特征</div>
+  </section>
+
+  <section class="flex-hbox01">
+    <div class="bj01">111</div>
+    <div class="bj02">222</div>
+    <div class="bj03">333</div>
+  </section>
+
+
+  <section class="flex-hbox02">
+    <div class="bj01">111</div>
+    <div class="bj02">222</div>
+    <div class="bj03">333</div>
+  </section>
+
+  <section class="flex-hbox03">
+    <div class="bj01">111</div>
+    <div class="bj02">222</div>
+    <div class="bj03">333</div>
+  </section>
+
+  <section class="flex-hbox04">
+    <div class="bj01">111</div>
+    <div class="bj02">222</div>
+    <div class="bj03">333</div>
+  </section>
+
+  <section class="flex-box">
+    <div class="bj01">111</div>
+    <div class="bj02 flex01">222</div>
+    <div class="bj03">333</div>
+  </section>
+
+  <section class="flex-box">
+    <div class="bj01">111</div>
+    <div class="bj02 flex01">222</div>
+    <div class="bj03 flex02">333</div>
+  </section>
+  <hr>
+  <section class="flex-vbox01">
+    <div class="bj01">
+      <div>111</div>
+      <div>111</div>
+    </div>
+    <div class="bj02">222</div>
+    <div class="bj03">
+      <div>333</div>
+      <div>333</div>
+    </div>
+  </section>
+
+  <hr>
+  <section class="flex-vbox02">
+    <div class="bj01">
+      <div>111</div>
+      <div>111</div>
+    </div>
+    <div class="bj02">222</div>
+    <div class="bj03">
+      <div>333</div>
+      <div>333</div>
+    </div>
+  </section>
+
+  <hr>
+  <section class="flex-wrap">
+    <div class="bj01">111</div>
+    <div class="bj02">222</div>
+    <div class="bj03">333</div>
+  </section>
+  <hr>
+  <section class="bj01 mybox">
+    <div class="bj02">悬空的div效果</div>
+  </section>
+
+  <hr>
+  <section class="flex-box">
+    <div class="bj01">图标</div>
+    <div class="bj02 flex01">
+      <div>我的名字</div>
+      <div class="flex-hbox01">
+        <div>微信号</div>
+        <div>图标</div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<!-- 外面压力布局，里面宽度100%，图片就不会跑出去 -->

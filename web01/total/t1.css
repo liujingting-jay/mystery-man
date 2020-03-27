@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+}
+
+/* 压力布局（只影响第一级） */
+.flex-box {
+  display: flex;
+}
+
+/* 背景颜色 */
+.bj01 {
+  background-color: blue;
+}
+
+.bj02 {
+  background-color: rgb(0, 255, 21);
+}
+
+.bj03 {
+  background-color: rgb(255, 0, 0);
+}
+
+/* 压力布局的空白分配，水平轴对齐 */
+.flex-hbox01 {
+  display: flex;
+  /* 分散对齐，头尾元素靠边，空白平均分配 */
+  justify-content: space-between;
+}
+
+.flex-hbox02 {
+  display: flex;
+  /* 子元素在中间 */
+  justify-content: center;
+}
+
+.flex-hbox03 {
+  display: flex;
+  /* 空白平均分配到子元素两侧 */
+  justify-content: space-around;
+}
+
+.flex-hbox04 {
+  display: flex;
+  /* 空白平均分配 */
+  justify-content: space-evenly;
+}
+
+/* 
+ 压力值,只能用在父元素是压力盒子的情况
+ 有了压力值就没有空白空间，一定会占满父元素
+ 没有压力值的还是保留了内容决定宽度的特色
+ 而压力值越大，分配的空间也越大
+ */
+.flex01 {
+  flex: 1;
+}
+
+.flex02 {
+  flex: 3;
+}
+
+/* 垂直对齐的压力盒子 */
+.flex-vbox01 {
+  display: flex;
+  /* 垂直轴居中，宽度自适应 */
+  align-items: center;
+}
+
+.flex-vbox02 {
+  display: flex;
+  /* 垂直轴靠下，宽度自适应 */
+  align-items: flex-end;
+}
+
+/* 支持换行的压力盒子 */
+.flex-wrap {
+  display: flex;
+  /* 允许超过宽度换行 */
+  flex-wrap: wrap;
+}
+
+.flex-wrap>div {
+  width: 40%;
+}
+
+/* 水平垂直居中 */
+.mybox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+/* 微信我的界面最上面一行布局效果 */
+
+

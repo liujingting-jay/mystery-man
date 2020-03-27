@@ -1,0 +1,34 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* 透明的背景色 */
+.mybg {
+  background-image: url('https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=98&tbOssInfo.obid=3');
+  background-size: cover;
+  /* 下面的css表示背景图片固定，不会跟着屏幕滚动变化 */
+  background-attachment: fixed;
+  width: 320px;
+  height: 180px;
+}
+
+.myalpha {
+  color: white;
+  /* 
+   rgba 的颜色：红，绿，蓝，透明度
+   前三个是0-255取值范围
+   第四个是0-1取值范围，越小就越透明
+   */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myop {
+  /* opaciti:元素的透明度，0-1取值范围，越小就越透明 */
+  opacity: 0.5;
+}
+
+.myfilter {
+  /* filter:特效滤镜 blur（虚化度） */
+  filter: blur(4px);
+}
