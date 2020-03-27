@@ -1,0 +1,31 @@
+.ys01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 1rem;
+  background-color: red;
+  color: white;
+}
+
+.ys01:hover {
+  background-color: rgb(136, 6, 6);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.ys02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}

@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+/* 白天粉黄蓝框 */
+.bj01 {
+  padding: 10px;
+  color: cornsilk;
+  background-color: pink;
+}
+
+.ys01 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ys01 span {
+  margin-right: 8px;
+  border: 2px solid powderblue;
+  padding: 4px;
+}
+
+/* 晚上绿灰黑框 */
+.bj02 {
+  padding: 10px;
+  color: lightgreen;
+  background-color: lightslategray;
+}
+
+.ys02 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ys02 span {
+  margin-right: 8px;
+  border: 2px solid black;
+  padding: 4px;
+}
