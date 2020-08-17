@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单元素，带value</title>
+</head>
+
+<body>
+  <!-- onsubmit="return false"不会一直刷新闪，不记得了就删除点击确定选卡看 -->
+  <form action="#" onsubmit="return false">
+    <input type="password" id="txtPwd" placeholder="密码">
+    <!-- label选中可以不用点在圆点上，点在字上面也可以选中 -->
+    <label>
+      <input type="radio" id="rdoYue" value="yue" name="mod">月卡
+    </label>
+    <label>
+      <input type="radio" id="rdoNian" value="nian" name="mod">年卡
+    </label>
+    <label>
+      <input type="radio" id="rdoYJ" value="yj" name="mod">永久
+    </label>
+
+    <label>
+      <input type="checkbox" id="chkShow">显示协议
+    </label>
+    <span id="spShow" style="display: none;">沈娇是三班的。。。</span>
+
+    <button id="btnOk">确定</button>
+    <!-- 
+      input type="reset" 是按钮，value是按钮文本，只有放在from中才会重置form中所有表单元素到初始值
+     -->
+    <input type="reset" value="重置表单到初始化">
+  </form>
+  <div id="divInfo"></div>
+
+  <script src="h0004.js"></script>
+</body>
+
+</html>

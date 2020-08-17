@@ -1,0 +1,70 @@
+body {
+  font-family: '华文行楷';
+  font-size: large;
+  background: white;
+  height: 100%;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.zy {
+  background-color: aliceblue;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zy a {
+  color: red;
+}
+
+.zy a:hover {
+  font-size: 1.5rem;
+  transition: all 1s ease;
+  background-color: rgba(60, 219, 219, 0.5);
+}
+
+.level02 {
+  background-color: #bcbcbc;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level02 a {
+  color: yellow;
+}
+
+.level02 a:hover {
+  font-size: 0.8rem;
+}
+
+.js {
+  background-color: rgb(22, 22, 22);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js a {
+  color: blue;
+
+}
+
+.js a:hover {
+  transition: all 4s ease;
+  width: 200px;
+  font-style: italic;
+  background-color: white;
+}
+
+h3 {
+  color: #504f4f;
+}

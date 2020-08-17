@@ -1,0 +1,17 @@
+#div01 span {
+  color: #ff0000;
+}
+
+@keyframes ani-div {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani-div {
+  animation: ani-div 1s;
+}
