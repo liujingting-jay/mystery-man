@@ -1,0 +1,32 @@
+.div01 {
+  height: 2rem;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.6) 20%, #ff0000 80%, #0000ff);
+}
+
+.div02 {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  margin: 5px;
+}
+
+.transform01 {
+  /* rotate旋转 */
+  transform: rotate(45deg);
+}
+
+.transform02 {
+  /* 压缩 */
+  transform: scale(1.5, 0.5);
+}
+
+.transform03 {
+  /* 移动 */
+  transform: translate(100px, 10px);
+}
+
+.transform04 {
+  /* 组合变形 */
+  /* 向左向下移动 旋转45° x轴缩小0.5 */
+  transform: translate(50%, -50%) rotate(45deg) scaleX(0.5);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+
+  <div class="text-right" style="padding: 0.1rem;">
+    <a href="post.html" class="btn btn-primary">返回</a>
+  </div>
+
+  <!-- bootstrap的面板 -->
+
+  <div class="panel panel-info" style="margin: 1rem;">
+    <div class="panel-heading">
+      <div class="panel-title" id="divTitle">
+        面板的标题
+      </div>
+    </div>
+
+    <!-- 面板的主体内容 -->
+    <div class="panel-body">
+      <div id="divPost">。。。</div>
+    </div>
+
+    <!-- 面板底部 -->
+    <div class="panel-footer text-right">
+      <span id="spPostTime">底部</span>
+    </div>
+  </div>
+
+  <!-- 回帖功能 -->
+  <div style="display: flex;">
+    <input type="text" id="txtContent" class="form-control">
+    <span class="btn btn-primary" id="btnAdd"> 回帖</span>
+  </div>
+
+  <!-- bs3-modal弹出式对话框 -->
+  <div class="modal fade" id="alert-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">服务器信息</h4>
+        </div>
+        <div class="modal-body">
+          <div id="divMessage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 回帖信息的显示区域 -->
+  <div id="divReply">
+
+  </div>
+
+
+
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="../ajax/js/ajax.js"></script>
+  <script src="./js/detail.js"></script>
+</body>
+
+</html>
