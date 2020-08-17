@@ -1,0 +1,56 @@
+#myaudio {
+  display: none;
+}
+
+#divList {
+  padding: 5px;
+}
+
+#divList>span {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* 自定义按钮样式 */
+.mybutton {
+  padding: 0.5rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  /* background-color: #ff0000; */
+}
+
+/* :nth-child里面的odd表示奇数个，even表示偶数个 */
+/* #divList > .mybutton:nth-child(odd) {
+  background-color: #ff0000;
+}
+
+#divList > .mybutton:nth-child(even) {
+  background-color: #ff00ff;
+} */
+/* 
+  数字n+数 表示在数字之间轮换 数字的大小表示轮回的数量 3就表示可以切换三种
+  +数只能是1-数字之间
+ */
+#divList>.mybutton:nth-child(3n + 1) {
+  background-color: #ff0000;
+}
+
+#divList>.mybutton:nth-child(3n + 2) {
+  background-color: #ff00ff;
+}
+
+#divList>.mybutton:nth-child(3n + 3) {
+  background-color: #0000ff;
+}
+
+#divLylic {
+  height: 40em;
+  overflow: auto;
+}
+
+.active {
+  color: #0000ff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: bold;
+}

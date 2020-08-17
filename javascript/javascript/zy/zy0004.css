@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  /* 背景图片不会在移动，滚来滚去 */
+  background-attachment: fixed;
+}
+
+.mydiv{
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 2rem;
+  min-height: 100vh;
+  /* min-leight: 100vh ； */
+}
+
+.mydiv > div {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border-top: 1px solid #ffffff;
+  width: 15rem;
+  height: 0px;
+  margin: 0px 10px;
+}
+
+.top-line {
+  border-right: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  padding: 1rem;
+}
+
+.sj {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #ff0000;
+  border-bottom: 50px solid transparent;
+}
