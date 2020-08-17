@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>其他知识一</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/other.css">
+</head>
+
+<body>
+  <hr>
+  <span class="btn btn-primary" id="btnQuery">查询效果</span>
+  <div id="divLoading">数据查询中</div>
+  <div id="divEmployee">
+    员工信息
+  </div>
+
+  <hr>
+  <span class="btn btn-danger" id="btnMessage">服务器信息弹出显示</span>
+  <!-- 弹出信息ui -->
+  <div id="divMessage">ddd</div>
+
+  <hr>
+  <!-- 校验效果 -->
+  <div id="divName" class="div-input">
+    <input type="text" id="txtName"><i>×</i>
+  </div>
+  <div id="divNameError">用户名必须填写</div>
+  <div id="divPwd" class="div-input">
+    <input type="password" id="txtPwd"><i>×</i>
+  </div>
+  <div id="divPwdError">密码必须填写</div>
+  <div>
+    <span class="btn btn-primary" id="btnValidate">校验</span>
+  </div>
+
+  <!-- z-index效果 -->
+  <hr>
+  <div id="divContainer">
+    <div id="div01">div01</div>
+    <div id="div02">div02</div>
+  </div>
+
+
+
+
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/other.js"></script>
+</body>
+
+</html>
