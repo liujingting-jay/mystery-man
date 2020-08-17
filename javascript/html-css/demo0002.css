@@ -1,0 +1,38 @@
+#div01 {
+  background-color: #ff0000;
+}
+
+#div02 {
+  background-color: #00ff00;
+}
+
+#div03 {
+  background-color: #0000ff;
+}
+
+/* 压力布局 让第一级元素压一行 */
+.line01 {
+  display: flex;
+}
+
+.line01>div {
+  flex: 1;
+}
+
+.line02>div {
+  height: 0.5rem;
+  width: 33.3333333%;
+  background-color: #ffff00;
+  transform: translate(100%, 0%);
+  transition: transform 0.7s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container>section {
+  width: 600px;
+  padding: 2rem;
+}

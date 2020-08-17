@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  background-image: url('../images/2.jpg');
+}
+
+
+/* 全屏遮罩容器 vh可视高度，vw可视宽度*/
+.container {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}

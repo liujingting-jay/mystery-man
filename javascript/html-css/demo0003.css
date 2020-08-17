@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+}
+
+/* 响应式布局 */
+.block01 {
+  display: flex;
+  /* 允许超过宽度就换行 */
+  flex-wrap: wrap;
+}
+
+.block01>div {
+  width: 25%;
+}
+
+/* 1366px 媒体查询 */
+/* 当屏幕宽度小于768px的时候套用样式 */
+@media screen and (max-width: 767px) {
+
+  /* 手机屏判断 */
+  .block01>div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .block01>div {
+    width: 50%;
+  }
+}
+
+/* 992px-1199px */
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .block01>div {
+    width: 33.33333%;
+  }
+}
+
+/* 手机桌面css切换 */
+.desktop {
+  /* 桌面版本样式 */
+  display: flex;
+  display: none;
+  /* 空白区域平均分配 */
+  justify-content: space-evenly;
+}
+
+.phone {
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+}
+
+/* , 表示a或者b */
+.desktop,
+.phone {
+  display: none;
+  /* visibility: hidden;  也是隐藏，但高度依然在 只是东西不见了*/
+}
+
+/* 当屏幕宽度小于767px 手机版css出现 */
+@media screen and (max-width:767px) {
+  .phone {
+    display: flex;
+  }
+}
+
+/* 当屏幕宽度大于768px 手机版css出现 */
+@media screen and (min-width:768px) {
+  .desktop {
+    display: flex;
+  }
+}
+
+#desktop,
+#phone {
+  display: none;
+}
